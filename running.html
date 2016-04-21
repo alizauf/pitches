@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="c4.css">
+    <title>Race the Olympic Athletes </title>
+<!--     <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <!-- <script src='c4.js'></script> -->
+<!--     <link href='https://fonts.googleapis.com/css?family=Pacifico|Hind' rel='stylesheet' type='text/css'>
+ -->    <link rel="icon" type="image/png" href="favicon.png" />
+     <style>
+    body {
+    /*text-align: center;*/
+    font-family: 'Georgia', serif;
+    color: rgb(51,51,51);
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+h1 {
+    color: rgb(51,51,51)
+   font-size: 34px;
+    margin: 5px;
+    font-weight: lighter;
+}
+
+h2 {
+    margin: 5px;
+    font-weight: lighter;
+    color: #767676;
+    font-size: 25px;
+}
+
+p {
+    line-height: 20px;
+    margin: 10px;
+    color: #767676;
+}
+
+a {
+    color: #005689;
+    text-decoration: none;
+}
+
+.pool {
+    width: 600px;
+    height: 300px;
+    background-color: #4CDEEF;
+   /* margin: 0 auto;*/
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 10px;
+    margin: 30px;
+}
+
+.lane {
+    border-bottom-color: red;
+    border-bottom-width: 4px;
+    border-bottom-style: dashed;
+    height: 46px;
+}
+
+.track {
+    /*margin: 0 auto;*/
+    width: 400px;
+    height: 150px;
+    border-radius: 200px;
+    border-width: 100px;
+    background-color: white;
+    border-color: #E04006;
+    border-style: solid;
+    margin-top: 30px;
+}
+
+.topBar {
+    background-color: #005689;
+    height: 40px;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.the {
+    color: #AADCE6;  
+}
+.faux {
+    color: #E04006;
+    font-style: italic;
+}
+
+.guardian {
+    color: #ffffff;  
+}
+
+.content {
+    padding-left: 100px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left {
+    order: 1;
+    width: 300px;
+
+}
+
+.right {
+    order: 2;
+
+}
+
+.button {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #005689;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.pitches {
+    width: 750px;
+}
+
+.pitches p {
+    margin-left: 0px;
+}
+/*.swimming {
+    background-color: #005689;
+    color: #ffffff;  
+}*/
+
+
+    </style>
+</head>
+
+<body>
+    <div class='topBar'><p><span class='the'>the</span><span class='faux'>faux</span><span class='guardian'>guardian</span></p></div>
+   <div class='content'>
+    <h1>Just how fast are the Olympic athletes?</h1>
+    <h2>Try your hand at racing them to put their speed in context.</h2>
+    <p>by <a href="http://www.alizaaufrichtig.com">Aliza Aufrichtig</a> | <a href="pitches.html">See other pitches</a></p>
+    <div class="pitches">
+    <p>Olympic runners and swimmers are some of the fastest people in the world. The difference between gold and bronze is often milliseconds. But when they're racing against each other, they're all so fast that it's hard to understand the frame of reference and see just how fast they are. One thing is easy to understand, though: the Olympic runners and swimmers are faster than you. So we'll show you how fast the athletes are by making you the frame of reference.</p>
+    <p>Enter the speed at which you've run or swum. If you haven't run or swam that distance, you can select the average runner or swimmer's speed. Or better yet, head outside to the track or the pool, and get some exercise while you find out. </p>
+    </div>
+
+        <p><span class='swimming'><a href='swimming.html'>Swimming</a></span> | <span class='running'></span><a href='running.html'>Running</a></p>
+
+<div class='flex'>
+<div class = 'left'>
+<form><p>Choose an event to race </p>
+<select>
+  <option value="100">100 M</option>
+  <option value="200">Marathon</option>
+  <option value="400">Women's Relay</option>
+  <option value="Etc">Etc.</option>
+</select>
+</form>
+
+<table>
+  <tr>
+    <td>Medal</td>
+    <td>Team</td> 
+    <td>Time</td>
+
+  </tr>
+  <tr>
+    <td>Gold</td>
+    <td>USA</td> 
+    <td>1:00</td>
+  </tr>
+  <tr>
+    <td>Silver</td>
+    <td>Canada</td> 
+    <td>1:01</td>
+  </tr>
+  <tr>
+    <td>Bronze</td>
+    <td>France</td> 
+    <td>1:03</td>
+  </tr>
+</table>
+</div>
+<div class = 'right'>
+<form><p>What is a distance you've run?</p>
+
+<input type="text" name="fname"><select>
+  <option value="100">Meters</option>
+  <option value="200">Yards</option>
+  <option value="400">Kilometers</option>
+  <option value="Etc">Miles</option>
+</select>
+<p>How long did it take you to run it?</p>
+<input type="text" name="fname"> Hours <input type="text" name="fname"> Minutes <input type="text" name="fname"> Seconds
+
+<div class='button'>Start the race</div>
+
+</div>
+</div>
+
+    <div class='track'></div>
+    <div class='twitter'>
+<p>Share your race results.
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="I got lapped by Michael Phelps X times" data-via="alizauf" data-hashtags="olympiansarefast">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="c4.css">
+    <title>Race the Olympic Athletes </title>
+<!--     <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <!-- <script src='c4.js'></script> -->
+<!--     <link href='https://fonts.googleapis.com/css?family=Pacifico|Hind' rel='stylesheet' type='text/css'>
+ -->    <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+    body {
+    /*text-align: center;*/
+    font-family: 'Georgia', serif;
+    color: rgb(51,51,51);
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+h1 {
+    color: rgb(51,51,51)
+   font-size: 34px;
+    margin: 5px;
+    font-weight: lighter;
+}
+
+h2 {
+    margin: 5px;
+    font-weight: lighter;
+    color: #767676;
+    font-size: 25px;
+}
+
+p {
+    line-height: 20px;
+    margin: 10px;
+    color: #767676;
+}
+
+li {
+    color: #767676;
+}
+
+a {
+    color: #005689;
+    text-decoration: none;
+}
+
+.pool {
+    width: 600px;
+    height: 300px;
+    background-color: #8AF1FD;
+   /* margin: 0 auto;*/
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 10px;
+    margin-top: 30px;
+}
+
+.lane {
+    border-bottom-color: #E04006;
+    border-bottom-width: 4px;
+    border-bottom-style: dashed;
+    height: 46px;
+}
+
+.track {
+    /*margin: 0 auto;*/
+    width: 400px;
+    height: 150px;
+    border-radius: 200px;
+    border-width: 100px;
+    background-color: white;
+    border-color: #E04006;
+    border-style: solid;
+}
+
+.topBar {
+    background-color: #005689;
+    height: 40px;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.the {
+    color: #AADCE6;  
+}
+.faux {
+    color: #E04006;
+    font-style: italic;
+}
+
+.guardian {
+    color: #ffffff;  
+}
+
+.content {
+    padding-left: 100px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left {
+    order: 1;
+    width: 300px;
+
+}
+
+.right {
+    order: 2;
+
+}
+
+.button {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #005689;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.gold {
+
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    background-color: #FFDF00;
+    border-radius: 30px;
+}
+
+.silver {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    background-color: #c0c0c0;
+    border-radius: 30px;
+}
+
+.bronze {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    background-color: #cd7f32;
+    border-radius: 30px;
+}
+
+.you {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    background-color: #E04006;
+    border-radius: 30px;
+    
+}
+
+.textyou {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.pitches {
+    width: 750px;
+}
+
+.pitches p {
+    margin-left: 5px;
+}
+
+/*.swimming {
+    background-color: #005689;
+    color: #ffffff;  
+}*/
+
+
+    </style>
+</head>
+
+<body>
+    <div class='topBar'><p><span class='the'>the</span><span class='faux'>faux</span><span class='guardian'>guardian</span></p></div>
+   <div class='content'>
+   <div class = 'pitches'>
+     <h1><a href='swimming.html'>Just how fast are the Olympic athletes?</a></h1>
+     <h2>Make race results relatable by creating a personal context for athlete speed.</h2>
+     <p>The Olympic race presentations create drama at the level of the millisecond. Spectators get invested in which athlete will out-touch the other. But everyone who is racing is exceptionally good. And so what the current race presentation fails to do is show just <em>how much faster</em> Olympic athletes are than the average person. This story and visualization is a fun way to get users involved in seeing just how fast those race results are.</p>
+
+     <br />
+
+     <h1>How much time do students spend prepping for tests?</h1>
+     <h2>An analysis of state-mandated curriculum, and a survey of teachers.</h2>
+     <p>Having worked as a teacher, and then a product manager in the world of education technology, I learned that teachers' most precious resource is their time. And the top teacher complaint I've heard anecdotally--though I have 7 years of anecdotes--is that test prep takes up too much time. I'm interested in quantifing this amount of time via a few methods and creating a visualization that shows the percentage of curricular time during a school year spent on test prep. I want readers to reflect on whether they think this amount of time is suitable, and also how it varies socioeconomically.</p>
+
+     <p>Elements of the story:</p>
+     <ul>
+     <li>Analysis of recommended schedules in state-mandated curriculum</li>
+     <li>Interviews with teachers and administrators in school districts across the U.S.</li>
+     <li>Survey of teachers in a few districts, some of which have mandated curriculum.</li>
+     <li>A schedule graphic that shows how much time is filled with test-prep.</li>
+      <li>If there is enough response, a choropleth map showing differences in time on test-prep (potentially within a single city, like New York)</li>
+     </ul>
+
+
+     <p></p>
+     <br />
+
+     <h1>An exploration of government form usability</h1>
+     <h2>Analyze the reading level of common forms and allow readers to interact with them</h2>
+     <p>Government forms are notoriously difficult to read, and this causes problems for people who need the most help from government. (<a href="https://medium.com/swlh/i-redesigned-the-usps-package-delivery-slip-fd43d8607753#.rcwp3ycy3">I tackled a redesign of the USPS package slip for fun</a>.) Since the 1970s, lawmakers have been working to make the forms simpler, but they are still written at high reading levels. I'd like to scrape the text from common forms (state tax, food stamps, DMV) and analyze the lexile level. Then I'd like to take confusing parts of forms and create multiple choice quizzes asking readers if they can figure out what they are supposed to do.</p>
+      <p>Elements of the story:</p>
+     <ul>
+     <li>Choropleth map of the US showing the different averages of reading level on common forms by state.</li>
+     <li>Interview with the people who create government forms--who are these folks? Why are they making forms the way they are?</li>
+     <li>Interviews with civic UX designers who are working to improve forms.</li>
+     <li>Interviews with people trying to use the forms, who read at a variety of levels. Including non-native English speakers.</li>
+     <li>Interactive quiz to try to fill out forms.</li>
+     </ul>
+     <br />
+    
+
+</div>
+
+
+</div>
+</body>
+
+</html>
